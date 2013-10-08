@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.ocse.android.app"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="15"/>
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+        <activity android:name="MainActivity"
+                  android:label="@string/app_name" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".DoubanList" android:label="@string/app_name"
+                  android:theme="@android:style/Theme.Black.NoTitleBar">
+        </activity>
+        <activity
+                android:name="com.tencent.weibo.sdk.android.component.PublishActivity"
+                android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+                android:name="com.tencent.weibo.sdk.android.component.GeneralInterfaceActivity"
+                android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+                android:name="com.tencent.weibo.sdk.android.component.ConversationActivity"
+                android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+                android:name="com.tencent.weibo.sdk.android.component.FriendActivity"
+                android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.Authorize">
+        </activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.GeneralDataShowActivity">
+        </activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.ReAddActivity">
+        </activity>
+        <uses-library android:name="android.test.runner"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
+                     android:targetPackage="com.ocse.android.app"
+                     android:label="Test for my app"/>
+</manifest>

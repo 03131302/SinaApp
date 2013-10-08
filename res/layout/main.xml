@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:id="@+id/main"
+        >
+    <TwoLineListItem
+            android:layout_width="fill_parent"
+            android:layout_height="120dp" android:layout_gravity="left|center_vertical" android:layout_margin="3dp">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="新浪账户："
+                android:id="@+id/textView"
+                android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                android:layout_margin="5dp"/>
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sinaUsername" android:layout_alignLeft="@+id/textView"
+                android:layout_below="@+id/textView" android:singleLine="true" android:focusable="true"
+                android:text="615201284"/>
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sinaPassword" android:layout_alignLeft="@+id/textView"
+                android:layout_below="@+id/sinaUsername" android:singleLine="true" android:password="false"
+                android:editable="true" android:enabled="true" android:text="c824df11a6e95ef3be83d60725ec1c0e"/>
+    </TwoLineListItem>
+    <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="使用统一账号"
+            android:id="@+id/checkBox" android:layout_gravity="left|center_vertical" android:checked="false"
+            android:layout_margin="5dp"/>
+    <TwoLineListItem
+            android:layout_width="fill_parent"
+            android:layout_height="126dp" android:layout_gravity="left|center_vertical" android:layout_margin="3dp">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="腾讯账号："
+                android:id="@+id/textView1" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                android:layout_margin="5dp"/>
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/qqUsername" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                android:layout_marginTop="28dp"/>
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/qqPassword" android:layout_alignLeft="@+id/qqUsername"
+                android:layout_below="@+id/qqUsername" android:password="false"/>
+    </TwoLineListItem>
+    <TwoLineListItem
+            android:layout_width="fill_parent"
+            android:layout_height="130dp" android:layout_gravity="center" android:layout_margin="3dp">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="豆瓣账号："
+                android:id="@+id/textView2" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                android:layout_margin="5dp"/>
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="57dp"
+                android:id="@+id/doubanUsername" android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView2" android:text="0a6d71b39485d58b1f48551abd9180a1"/>
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/doubanPassword"
+                android:layout_alignParentLeft="true" android:layout_below="@+id/doubanUsername"
+                android:password="false" android:text="cc30d07e93d2839c"/>
+    </TwoLineListItem>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_gravity="center">
+        <Button
+                android:layout_width="116dp"
+                android:layout_height="41dp"
+                android:text="开始"
+                android:id="@+id/button" android:layout_gravity="left|center_vertical" android:onClick="startDo"/>
+        <Button
+                android:layout_width="116dp"
+                android:layout_height="41dp"
+                android:text="查看状态"
+                android:id="@+id/button1"
+                android:layout_toRightOf="@+id/button" android:layout_alignBottom="@+id/button"
+                android:onClick="showStatus" android:enabled="false"/>
+    </RelativeLayout>
+</LinearLayout>
+
