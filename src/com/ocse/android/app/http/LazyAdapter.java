@@ -43,10 +43,7 @@ public class LazyAdapter extends BaseAdapter {
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
-        View vi = convertView;
-        if (convertView == null) {
-            vi = inflater.inflate(R.layout.doubanitem, null);
-        }
+        View vi = vi = inflater.inflate(R.layout.doubanitem, null);
         TextView title = (TextView) vi.findViewById(R.id.title);
         TextView artist = (TextView) vi.findViewById(R.id.artist);
         ImageView thumb_image = (ImageView) vi.findViewById(R.id.list_image);
@@ -56,6 +53,7 @@ public class LazyAdapter extends BaseAdapter {
         title.setText(song.get("title"));
         artist.setText(song.get("title"));
         if (SinaTool.getStatus_map().contains(song.get("title"))) {
+            Log.v("标题名称", song.get("title"));
             RelativeLayout relativeLayout = (RelativeLayout) vi.findViewById(R.id.listall);
             relativeLayout.setBackgroundColor(Color.GREEN);
         }
