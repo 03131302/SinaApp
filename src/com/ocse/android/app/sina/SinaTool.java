@@ -50,7 +50,7 @@ public class SinaTool {
         LayoutInflater inflater = LayoutInflater.from(activity);
         View layout = inflater.inflate(R.layout.sina, null);
         layout.setBackgroundResource(R.drawable.doubanstyle);
-        popupWindow = new PopupWindow(layout, 650, 750, true);
+        popupWindow = new PopupWindow(layout, 850, 1250, true);
         popupWindow.setBackgroundDrawable(activity.getResources().getDrawable(R.drawable.rounded_corners_view));
         Handler myHandler = new Handler() {
             public void handleMessage(Message msg) {

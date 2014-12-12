@@ -86,7 +86,7 @@ public class MainActivity extends Activity {
         LayoutInflater inflater = LayoutInflater.from(this);
         View layout = inflater.inflate(R.layout.douban, null);
         layout.setBackgroundResource(R.drawable.doubanstyle);
-        popupWindow = new PopupWindow(layout, 450, 500, true);
+        popupWindow = new PopupWindow(layout, 550, 800, true);
         popupWindow.setBackgroundDrawable(getResources().getDrawable(R.drawable.rounded_corners_view));
         popupWindow.showAtLocation(view, Gravity.CENTER, 0, 0);
         popupWindow.setFocusable(true);
